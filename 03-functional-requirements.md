@@ -850,3 +850,224 @@ Buyer dapat menambahkan maupun menghapus produk dari daftar favorit.
 ### Priority
 
 Medium
+
+---
+
+# Module: Order
+
+## FR-080 — Membuat Pesanan
+
+### Deskripsi
+
+Buyer harus dapat membuat pesanan dari produk yang terdapat pada satu seller.
+
+Sistem hanya memperbolehkan satu seller dalam satu transaksi.
+
+### Acceptance Criteria
+
+- Keranjang tidak kosong.
+- Seluruh produk berasal dari seller yang sama.
+- Pesanan berhasil dibuat.
+
+### Priority
+
+High
+
+---
+
+## FR-081 — Checkout
+
+### Deskripsi
+
+Buyer dapat melakukan checkout terhadap produk yang berada di dalam keranjang.
+
+Informasi checkout meliputi:
+
+- Catatan Pesanan
+- Metode Pembayaran
+- Metode Pengiriman
+
+### Acceptance Criteria
+
+- Buyer berhasil mengisi seluruh informasi.
+- Sistem membuat ringkasan pesanan.
+- Total pembayaran dihitung otomatis.
+
+### Priority
+
+High
+
+---
+
+## FR-082 — Status Pesanan
+
+### Deskripsi
+
+Setiap pesanan memiliki status yang menggambarkan proses transaksi.
+
+Status yang digunakan:
+
+- Pending Payment
+- Paid
+- Waiting Seller Confirmation
+- Processing
+- Ready for Pickup
+- Out for Delivery
+- Completed
+- Cancelled
+
+### Acceptance Criteria
+
+- Status berubah sesuai alur bisnis.
+- Riwayat perubahan status tersimpan.
+
+### Priority
+
+High
+
+---
+
+## FR-083 — Pembatalan Pesanan oleh Buyer
+
+### Deskripsi
+
+Buyer dapat membatalkan pesanan sebelum seller mulai memproses pesanan.
+
+### Acceptance Criteria
+
+- Status pesanan belum memasuki Processing.
+- Sistem mengubah status menjadi Cancelled.
+- Pembatalan tercatat pada riwayat pesanan.
+
+### Priority
+
+High
+
+---
+
+## FR-084 — Pembatalan Pesanan oleh Seller
+
+### Deskripsi
+
+Seller dapat membatalkan pesanan apabila pesanan tidak dapat dipenuhi.
+
+Contoh:
+
+- Produk habis.
+- Toko tutup mendadak.
+- Kendala operasional.
+
+### Acceptance Criteria
+
+- Alasan pembatalan wajib diisi.
+- Buyer menerima notifikasi.
+- Status berubah menjadi Cancelled.
+
+### Priority
+
+High
+
+---
+
+## FR-085 — Riwayat Pesanan Buyer
+
+### Deskripsi
+
+Buyer dapat melihat seluruh riwayat pesanan yang pernah dilakukan.
+
+### Acceptance Criteria
+
+- Riwayat berhasil dimuat.
+- Pesanan diurutkan dari yang terbaru.
+
+### Priority
+
+Medium
+
+---
+
+## FR-086 — Detail Pesanan
+
+### Deskripsi
+
+Buyer dan Seller dapat melihat detail lengkap suatu pesanan.
+
+Informasi yang ditampilkan meliputi:
+
+- Nomor Pesanan
+- Daftar Produk
+- Total Pembayaran
+- Metode Pembayaran
+- Metode Pengiriman
+- Catatan
+- Status Pesanan
+- Waktu Pemesanan
+
+### Acceptance Criteria
+
+- Detail berhasil dimuat.
+- Informasi sesuai data transaksi.
+
+### Priority
+
+High
+
+---
+
+## FR-087 — Perubahan Status Pesanan oleh Seller
+
+### Deskripsi
+
+Seller dapat memperbarui status pesanan sesuai progres pengerjaan.
+
+### Acceptance Criteria
+
+- Status mengikuti alur yang valid.
+- Buyer menerima pembaruan status.
+- Riwayat status tersimpan.
+
+### Priority
+
+High
+
+---
+
+## FR-088 — Menentukan Estimasi Waktu Penyelesaian
+
+### Deskripsi
+
+Seller harus dapat menentukan estimasi waktu penyelesaian pesanan setelah menerima pesanan.
+
+Estimasi waktu digunakan untuk memberikan informasi kepada Buyer mengenai perkiraan kapan pesanan akan siap diambil atau dikirim.
+
+### Acceptance Criteria
+
+- Seller dapat memilih estimasi waktu.
+- Estimasi tersimpan pada data pesanan.
+- Estimasi dapat diperbarui selama pesanan belum selesai.
+- Buyer menerima pembaruan estimasi waktu apabila terjadi perubahan.
+
+### Priority
+
+Medium
+
+---
+
+## FR-089 — Menampilkan Estimasi Waktu kepada Buyer
+
+### Deskripsi
+
+Sistem harus menampilkan estimasi waktu penyelesaian pesanan yang diberikan oleh Seller.
+
+Estimasi ditampilkan pada halaman detail pesanan sehingga Buyer dapat mengetahui perkiraan waktu pesanan selesai diproses.
+
+### Acceptance Criteria
+
+- Estimasi waktu ditampilkan pada halaman detail pesanan.
+- Estimasi diperbarui secara otomatis apabila Seller mengubahnya.
+- Buyer dapat melihat estimasi hingga pesanan berstatus Completed atau Cancelled.
+
+### Priority
+
+Medium
+
