@@ -1262,3 +1262,179 @@ Buyer dapat melakukan pembayaran ulang terhadap transaksi yang masih berstatus P
 ### Priority
 
 Medium
+
+---
+
+# Module: Wallet
+
+## FR-100 — Menampilkan Wallet Seller
+
+### Deskripsi
+
+Sistem harus menyediakan halaman Wallet yang menampilkan informasi saldo milik Seller.
+
+### Acceptance Criteria
+
+- Seller dapat membuka halaman Wallet.
+- Informasi saldo berhasil dimuat.
+- Data yang ditampilkan sesuai dengan akun Seller yang sedang login.
+
+### Priority
+
+High
+
+---
+
+## FR-101 — Menampilkan Saldo Tersedia
+
+### Deskripsi
+
+Sistem harus menampilkan saldo yang telah memenuhi syarat untuk dilakukan penarikan dana (Available Balance).
+
+### Acceptance Criteria
+
+- Saldo dihitung secara otomatis.
+- Nilai saldo sesuai dengan transaksi yang telah memenuhi aturan bisnis.
+
+### Priority
+
+High
+
+---
+
+## FR-102 — Menampilkan Saldo Pending
+
+### Deskripsi
+
+Sistem harus menampilkan saldo yang masih dalam proses penyelesaian (Pending Balance).
+
+Saldo pending belum dapat ditarik oleh Seller.
+
+### Acceptance Criteria
+
+- Saldo pending ditampilkan secara terpisah.
+- Nilai diperbarui sesuai status transaksi.
+
+### Priority
+
+High
+
+---
+
+## FR-103 — Menampilkan Total Pendapatan
+
+### Deskripsi
+
+Sistem harus menampilkan total pendapatan Seller berdasarkan seluruh transaksi yang berhasil.
+
+### Acceptance Criteria
+
+- Total pendapatan dihitung otomatis.
+- Data sesuai dengan riwayat transaksi.
+
+### Priority
+
+Medium
+
+---
+
+## FR-104 — Menampilkan Riwayat Wallet
+
+### Deskripsi
+
+Seller dapat melihat seluruh riwayat perubahan saldo Wallet.
+
+Riwayat meliputi:
+
+- Dana masuk
+- Dana keluar
+- Withdrawal
+- Penyesuaian saldo (jika ada)
+
+### Acceptance Criteria
+
+- Riwayat ditampilkan secara kronologis.
+- Setiap transaksi memiliki informasi yang lengkap.
+
+### Priority
+
+High
+
+---
+
+## FR-105 — Menambahkan Saldo Secara Otomatis
+
+### Deskripsi
+
+Sistem harus menambahkan saldo ke Wallet Seller secara otomatis ketika transaksi telah memenuhi aturan bisnis.
+
+### Acceptance Criteria
+
+- Saldo bertambah secara otomatis.
+- Tidak terjadi penambahan saldo ganda.
+- Seluruh perubahan tercatat pada riwayat Wallet.
+
+### Priority
+
+High
+
+---
+
+## FR-106 — Mengurangi Saldo Setelah Withdrawal
+
+### Deskripsi
+
+Sistem harus mengurangi Available Balance setelah proses withdrawal berhasil dilakukan.
+
+### Acceptance Criteria
+
+- Saldo berkurang sesuai nominal withdrawal.
+- Riwayat Wallet diperbarui.
+- Saldo tidak dapat bernilai negatif.
+
+### Priority
+
+High
+
+---
+
+## FR-107 — Detail Transaksi Wallet
+
+### Deskripsi
+
+Seller dapat melihat informasi lengkap dari setiap transaksi Wallet.
+
+Informasi yang ditampilkan meliputi:
+
+- Nomor Referensi
+- Jenis Transaksi
+- Nominal
+- Waktu
+- Status
+- Keterangan
+
+### Acceptance Criteria
+
+- Detail transaksi berhasil dimuat.
+- Informasi sesuai dengan data transaksi.
+
+### Priority
+
+Medium
+
+---
+
+## FR-108 — Refresh Saldo Wallet
+
+### Deskripsi
+
+Sistem harus memperbarui informasi saldo Wallet ketika terjadi perubahan transaksi.
+
+### Acceptance Criteria
+
+- Saldo diperbarui setelah transaksi berhasil.
+- Informasi Wallet tetap konsisten dengan database.
+
+### Priority
+
+Medium
