@@ -374,3 +374,266 @@ Apabila Buyer menambahkan produk dari seller yang berbeda, sistem harus meminta 
 ### Priority
 
 High
+
+---
+
+# Module: Seller
+
+## FR-060 — Menampilkan Dashboard Seller
+
+### Deskripsi
+
+Sistem harus menyediakan dashboard utama bagi Seller setelah berhasil login.
+
+Dashboard digunakan sebagai pusat informasi mengenai aktivitas toko.
+
+Informasi yang ditampilkan meliputi:
+
+- Total Pendapatan
+- Saldo Tersedia
+- Saldo Pending
+- Total Pesanan Hari Ini
+- Produk Terjual
+- Grafik Penjualan
+- Notifikasi
+- Quick Actions
+
+### Acceptance Criteria
+
+- Dashboard berhasil dimuat.
+- Data ditampilkan berdasarkan seller yang sedang login.
+- Informasi diperbarui secara berkala.
+
+### Priority
+
+High
+
+---
+
+## FR-061 — Mengelola Produk
+
+### Deskripsi
+
+Seller harus dapat mengelola daftar produk yang dijual.
+
+Fitur yang tersedia:
+
+- Menambah Produk
+- Mengubah Produk
+- Menghapus Produk
+
+### Acceptance Criteria
+
+- Produk baru berhasil dibuat.
+- Produk dapat diperbarui.
+- Produk dapat dihapus.
+- Perubahan langsung tercermin pada halaman toko.
+
+### Priority
+
+High
+
+---
+
+## FR-062 — Mengubah Status Ketersediaan Produk
+
+### Deskripsi
+
+Seller harus dapat mengubah status ketersediaan produk menggunakan mekanisme toggle.
+
+Status yang tersedia:
+
+- Tersedia
+- Habis
+
+Sistem tidak menggunakan manajemen stok numerik karena produk yang dijual merupakan makanan dengan ketersediaan yang bersifat dinamis.
+
+### Acceptance Criteria
+
+- Seller dapat mengubah status produk.
+- Produk berstatus Habis tidak dapat dipesan.
+- Perubahan status langsung terlihat oleh Buyer.
+
+### Priority
+
+High
+
+---
+
+## FR-063 — Mengelola Pesanan
+
+### Deskripsi
+
+Seller harus dapat mengelola seluruh pesanan yang masuk.
+
+Status pesanan yang dapat diberikan oleh Seller:
+
+- Diproses
+- Siap Diambil
+- Sedang Diantar
+- Selesai
+- Dibatalkan
+
+### Acceptance Criteria
+
+- Seller dapat mengubah status pesanan.
+- Buyer menerima perubahan status.
+- Riwayat status tersimpan.
+
+### Priority
+
+High
+
+---
+
+## FR-064 — Wallet Seller
+
+### Deskripsi
+
+Sistem harus menyediakan Wallet sebagai tempat penyimpanan saldo virtual milik Seller.
+
+Wallet menampilkan:
+
+- Saldo Tersedia
+- Saldo Pending
+- Total Pendapatan
+- Riwayat Transaksi
+
+### Acceptance Criteria
+
+- Informasi saldo sesuai transaksi.
+- Riwayat transaksi dapat dilihat.
+- Nilai saldo dihitung secara otomatis.
+
+### Priority
+
+High
+
+---
+
+## FR-065 — Withdrawal
+
+### Deskripsi
+
+Seller dapat mengajukan pencairan saldo yang tersedia.
+
+Sistem mendukung:
+
+- Menambah rekening
+- Mengubah rekening
+- Pengajuan withdrawal
+
+Dukungan terhadap e-wallet dapat ditambahkan apabila didukung oleh penyedia layanan disbursement.
+
+### Acceptance Criteria
+
+- Seller hanya dapat menarik Saldo Tersedia.
+- Nominal memenuhi batas minimum.
+- Permintaan withdrawal tercatat.
+- Status withdrawal dapat dipantau.
+
+### Priority
+
+High
+
+---
+
+## FR-066 — AI Bokul
+
+### Deskripsi
+
+Seller dapat melakukan konfigurasi AI Bokul yang digunakan pada halaman toko.
+
+Konfigurasi meliputi:
+
+- Informasi toko
+- FAQ
+- Prompt AI
+- Personality AI
+
+### Acceptance Criteria
+
+- Konfigurasi berhasil disimpan.
+- AI menggunakan konfigurasi terbaru.
+- Perubahan berlaku pada halaman toko.
+
+### Priority
+
+Medium
+
+---
+
+## FR-067 — Mengelola Profil Toko
+
+### Deskripsi
+
+Seller dapat memperbarui informasi toko.
+
+Data yang dapat diperbarui meliputi:
+
+- Nama Toko
+- Logo
+- Banner
+- Deskripsi
+- Jam Operasional
+- Lokasi
+- Nomor Telepon
+
+### Acceptance Criteria
+
+- Perubahan berhasil disimpan.
+- Informasi toko diperbarui pada halaman Buyer.
+
+### Priority
+
+High
+
+---
+
+## FR-068 — Melihat Statistik Penjualan
+
+### Deskripsi
+
+Seller dapat melihat statistik performa toko.
+
+Informasi yang tersedia meliputi:
+
+- Pendapatan Hari Ini
+- Pendapatan Minggu Ini
+- Pendapatan Bulan Ini
+- Produk Terlaris
+- Total Pesanan
+- Total Pembatalan
+
+### Acceptance Criteria
+
+- Statistik dihitung otomatis.
+- Data ditampilkan sesuai periode.
+
+### Priority
+
+Medium
+
+---
+
+## FR-069 — Notifikasi Seller
+
+### Deskripsi
+
+Seller menerima notifikasi terkait aktivitas toko.
+
+Jenis notifikasi meliputi:
+
+- Pesanan Baru
+- Status Withdrawal
+- Verifikasi Akun
+- Pembatalan Pesanan
+
+### Acceptance Criteria
+
+- Notifikasi muncul secara real-time atau setelah data diperbarui.
+- Seller dapat melihat riwayat notifikasi.
+
+### Priority
+
+Medium
