@@ -4,6 +4,22 @@ Dokumen ini menjelaskan seluruh kebutuhan fungsional (Functional Requirements) y
 
 Setiap requirement memiliki identitas unik agar mudah ditelusuri selama proses pengembangan, pengujian, maupun pemeliharaan sistem.
 
+
+## Daftar Modul
+
+1. Authentication
+2. Buyer
+3. Seller
+4. Product
+5. Order
+6. Payment
+7. Wallet
+8. Withdrawal
+9. AI Assistant
+10. Maps
+11. Notification
+12. Admin
+
 ---
 
 # Module: Authentication
@@ -205,3 +221,156 @@ Pada versi production, sistem akan mendukung verifikasi email sebelum akun dapat
 ### Priority
 
 Low
+
+---
+
+# Module: Buyer
+
+## FR-020 — Menampilkan Halaman Beranda
+
+### Deskripsi
+
+Sistem harus menampilkan halaman utama bagi Buyer setelah berhasil login.
+
+Halaman utama menampilkan informasi yang membantu pengguna menemukan makanan dan toko dengan cepat.
+
+Komponen utama meliputi:
+
+- Search Bar
+- Banner
+- Daftar Kategori
+- Rekomendasi Produk
+- Rekomendasi Toko
+- AI Assistant (Minjan)
+
+### Acceptance Criteria
+
+- Buyer berhasil masuk ke halaman utama.
+- Seluruh komponen utama berhasil ditampilkan.
+- Data dimuat sesuai kondisi terbaru.
+
+### Priority
+
+High
+
+---
+
+## FR-021 — Pencarian Produk
+
+### Deskripsi
+
+Sistem harus memungkinkan Buyer mencari produk berdasarkan nama makanan.
+
+### Acceptance Criteria
+
+- Buyer dapat memasukkan kata kunci.
+- Sistem menampilkan produk yang sesuai.
+- Pencarian bersifat tidak sensitif terhadap huruf besar dan kecil.
+
+### Priority
+
+High
+
+---
+
+## FR-022 — Pencarian Toko
+
+### Deskripsi
+
+Sistem harus memungkinkan Buyer mencari toko berdasarkan nama toko.
+
+### Acceptance Criteria
+
+- Buyer dapat mencari toko.
+- Sistem menampilkan daftar toko yang sesuai.
+
+### Priority
+
+High
+
+---
+
+## FR-023 — Filter Pencarian (Future Development)
+
+### Deskripsi
+
+Sistem akan menyediakan fitur penyaringan hasil pencarian.
+
+Filter yang direncanakan:
+
+- Harga
+- Rating
+- Jarak
+- Kategori
+
+### Priority
+
+Medium
+
+---
+
+## FR-024 — Melihat Detail Produk
+
+### Deskripsi
+
+Sistem harus menampilkan informasi lengkap mengenai produk.
+
+Informasi yang ditampilkan:
+
+- Foto Produk
+- Nama Produk
+- Harga
+- Deskripsi
+- Rating
+- Review
+- Informasi Seller
+- Lokasi Seller
+- AI Bokul
+
+### Acceptance Criteria
+
+- Informasi produk berhasil dimuat.
+- Informasi seller ditampilkan.
+- AI Bokul tersedia pada halaman toko.
+
+### Priority
+
+High
+
+---
+
+## FR-025 — Menambahkan Produk ke Keranjang
+
+### Deskripsi
+
+Buyer dapat menambahkan produk ke keranjang belanja.
+
+Keranjang hanya dapat berisi produk dari satu seller.
+
+### Acceptance Criteria
+
+- Produk berhasil ditambahkan.
+- Jumlah produk dapat diubah.
+- Keranjang hanya berisi produk dari satu seller.
+
+### Priority
+
+High
+
+---
+
+## FR-026 — Validasi Seller pada Keranjang
+
+### Deskripsi
+
+Apabila Buyer menambahkan produk dari seller yang berbeda, sistem harus meminta konfirmasi untuk menghapus isi keranjang sebelumnya sebelum produk baru dapat ditambahkan.
+
+### Acceptance Criteria
+
+- Sistem mendeteksi seller berbeda.
+- Dialog konfirmasi ditampilkan.
+- Buyer dapat membatalkan atau melanjutkan proses.
+
+### Priority
+
+High
