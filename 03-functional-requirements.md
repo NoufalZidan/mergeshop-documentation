@@ -637,3 +637,216 @@ Jenis notifikasi meliputi:
 ### Priority
 
 Medium
+
+---
+
+# Module: Product
+
+## FR-070 — Menampilkan Daftar Produk
+
+### Deskripsi
+
+Sistem harus menampilkan seluruh produk yang dimiliki oleh Seller pada halaman toko.
+
+Produk ditampilkan dalam bentuk daftar maupun grid yang responsif sesuai ukuran perangkat.
+
+### Acceptance Criteria
+
+- Daftar produk berhasil dimuat.
+- Produk hanya berasal dari seller yang sedang dibuka.
+- Produk ditampilkan secara responsif.
+
+### Priority
+
+High
+
+---
+
+## FR-071 — Menampilkan Detail Produk
+
+### Deskripsi
+
+Sistem harus menampilkan informasi lengkap mengenai suatu produk.
+
+Informasi yang ditampilkan meliputi:
+
+- Foto Produk
+- Nama Produk
+- Harga
+- Deskripsi
+- Status Ketersediaan
+- Rating
+- Review
+- Informasi Seller
+- Lokasi Seller
+- AI Bokul
+
+### Acceptance Criteria
+
+- Seluruh informasi berhasil dimuat.
+- Produk yang tidak tersedia tetap dapat dilihat namun tidak dapat dipesan.
+
+### Priority
+
+High
+
+---
+
+## FR-072 — Menambahkan Produk
+
+### Deskripsi
+
+Seller harus dapat menambahkan produk baru ke dalam tokonya.
+
+Informasi produk meliputi:
+
+- Nama Produk
+- Harga
+- Deskripsi
+- Kategori
+- Foto Produk
+- Status Ketersediaan
+
+### Acceptance Criteria
+
+- Produk berhasil dibuat.
+- Produk langsung muncul pada halaman toko.
+
+### Priority
+
+High
+
+---
+
+## FR-073 — Mengubah Produk
+
+### Deskripsi
+
+Seller dapat memperbarui informasi produk yang telah dibuat.
+
+### Acceptance Criteria
+
+- Seluruh informasi produk dapat diperbarui.
+- Perubahan langsung terlihat oleh Buyer.
+
+### Priority
+
+High
+
+---
+
+## FR-074 — Menghapus Produk
+
+### Deskripsi
+
+Seller dapat menghapus produk dari tokonya.
+
+### Acceptance Criteria
+
+- Produk berhasil dihapus.
+- Produk tidak lagi muncul pada halaman Buyer.
+
+### Priority
+
+Medium
+
+---
+
+## FR-075 — Mengelompokkan Produk Berdasarkan Kategori
+
+### Deskripsi
+
+Produk dapat dikelompokkan berdasarkan kategori makanan.
+
+Kategori awal meliputi:
+
+- Makanan
+- Minuman
+- Cemilan
+
+Kategori lain dapat ditambahkan pada pengembangan selanjutnya.
+
+### Acceptance Criteria
+
+- Produk tampil sesuai kategori.
+- Buyer dapat melihat daftar kategori.
+
+### Priority
+
+Medium
+
+---
+
+## FR-076 — Menampilkan Status Ketersediaan Produk
+
+### Deskripsi
+
+Sistem harus menampilkan status ketersediaan setiap produk.
+
+Status yang tersedia:
+
+- Tersedia
+- Habis
+
+Produk dengan status "Habis" tidak dapat dipesan.
+
+### Acceptance Criteria
+
+- Status tampil pada halaman produk.
+- Tombol pembelian dinonaktifkan apabila status produk "Habis".
+
+### Priority
+
+High
+
+---
+
+## FR-077 — Menampilkan Rating Produk
+
+### Deskripsi
+
+Sistem harus menampilkan rating rata-rata yang diperoleh suatu produk.
+
+### Acceptance Criteria
+
+- Rating dihitung secara otomatis.
+- Rating diperbarui ketika terdapat review baru.
+
+### Priority
+
+Medium
+
+---
+
+## FR-078 — Menampilkan Review Produk
+
+### Deskripsi
+
+Buyer dapat melihat seluruh review yang diberikan oleh pengguna lain terhadap suatu produk.
+
+### Acceptance Criteria
+
+- Daftar review berhasil dimuat.
+- Review ditampilkan berdasarkan urutan terbaru.
+
+### Priority
+
+Medium
+
+---
+
+## FR-079 — Produk Favorit
+
+### Deskripsi
+
+Buyer dapat menambahkan maupun menghapus produk dari daftar favorit.
+
+### Acceptance Criteria
+
+- Produk berhasil ditambahkan ke favorit.
+- Produk berhasil dihapus dari favorit.
+- Daftar favorit dapat diakses melalui halaman profil Buyer.
+
+### Priority
+
+Medium
