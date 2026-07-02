@@ -1438,3 +1438,228 @@ Sistem harus memperbarui informasi saldo Wallet ketika terjadi perubahan transak
 ### Priority
 
 Medium
+
+---
+
+# Module: Withdrawal
+
+## FR-109 — Menampilkan Halaman Withdrawal
+
+### Deskripsi
+
+Sistem harus menyediakan halaman Withdrawal yang memungkinkan Seller melakukan penarikan saldo.
+
+### Acceptance Criteria
+
+- Halaman berhasil dimuat.
+- Informasi saldo tersedia ditampilkan.
+- Rekening aktif ditampilkan.
+
+### Priority
+
+High
+
+---
+
+## FR-110 — Mengelola Rekening Withdrawal
+
+### Deskripsi
+
+Seller dapat menambahkan maupun mengubah rekening tujuan withdrawal.
+
+Pada satu waktu hanya diperbolehkan memiliki satu rekening aktif.
+
+Jenis tujuan withdrawal yang didukung:
+
+- Rekening Bank
+- E-Wallet (apabila didukung oleh penyedia layanan)
+
+### Acceptance Criteria
+
+- Seller dapat menambahkan rekening.
+- Seller dapat memperbarui rekening.
+- Hanya terdapat satu rekening aktif.
+
+### Priority
+
+High
+
+---
+
+## FR-111 — Validasi Rekening
+
+### Deskripsi
+
+Sistem harus memvalidasi rekening tujuan sebelum rekening digunakan untuk withdrawal.
+
+### Acceptance Criteria
+
+- Nomor rekening berhasil divalidasi.
+- Nama pemilik rekening ditampilkan apabila valid.
+- Rekening tidak dapat digunakan apabila validasi gagal.
+
+### Priority
+
+High
+
+---
+
+## FR-112 — Mengajukan Withdrawal
+
+### Deskripsi
+
+Seller dapat mengajukan withdrawal menggunakan saldo yang tersedia.
+
+### Acceptance Criteria
+
+- Nominal withdrawal diinput.
+- Rekening tujuan dipilih.
+- Permintaan withdrawal berhasil dibuat.
+
+### Priority
+
+High
+
+---
+
+## FR-113 — Validasi Withdrawal
+
+### Deskripsi
+
+Backend harus melakukan validasi sebelum memproses withdrawal.
+
+Validasi meliputi:
+
+- Saldo mencukupi
+- Nominal minimum
+- Rekening aktif
+- Status akun Seller
+
+### Acceptance Criteria
+
+- Seluruh validasi berhasil.
+- Withdrawal ditolak apabila salah satu validasi gagal.
+
+### Priority
+
+High
+
+---
+
+## FR-114 — Memproses Withdrawal
+
+### Deskripsi
+
+Backend harus mengirim permintaan transfer dana ke penyedia layanan disbursement secara otomatis.
+
+### Acceptance Criteria
+
+- Permintaan transfer berhasil dikirim.
+- Status withdrawal diperbarui.
+- Reference ID penyedia layanan disimpan.
+
+### Priority
+
+High
+
+---
+
+## FR-115 — Status Withdrawal
+
+### Deskripsi
+
+Setiap withdrawal memiliki status proses.
+
+Status yang tersedia:
+
+- Processing
+- Completed
+- Failed
+
+### Acceptance Criteria
+
+- Status diperbarui secara otomatis.
+- Riwayat perubahan status tersimpan.
+
+### Priority
+
+High
+
+---
+
+## FR-116 — Riwayat Withdrawal
+
+### Deskripsi
+
+Seller dapat melihat seluruh riwayat withdrawal.
+
+Informasi yang ditampilkan:
+
+- Nominal
+- Status
+- Rekening Tujuan
+- Tanggal
+- Reference ID
+
+### Acceptance Criteria
+
+- Riwayat berhasil dimuat.
+- Data sesuai transaksi.
+
+### Priority
+
+Medium
+
+---
+
+## FR-117 — Detail Withdrawal
+
+### Deskripsi
+
+Seller dapat melihat detail dari setiap withdrawal yang pernah dilakukan.
+
+### Acceptance Criteria
+
+- Informasi lengkap ditampilkan.
+- Status terakhir ditampilkan.
+
+### Priority
+
+Medium
+
+---
+
+## FR-118 — Notifikasi Withdrawal
+
+### Deskripsi
+
+Seller harus menerima notifikasi ketika status withdrawal berubah.
+
+### Acceptance Criteria
+
+- Notifikasi muncul ketika withdrawal berhasil.
+- Notifikasi muncul ketika withdrawal gagal.
+
+### Priority
+
+Medium
+
+---
+
+## FR-119 — Otomatisasi Withdrawal
+
+### Deskripsi
+
+Sistem harus memproses withdrawal secara otomatis tanpa memerlukan persetujuan manual dari Admin.
+
+Seluruh validasi dilakukan oleh Backend sebelum permintaan transfer dikirim ke penyedia layanan disbursement.
+
+### Acceptance Criteria
+
+- Tidak diperlukan tindakan Admin.
+- Seluruh validasi dilakukan secara otomatis.
+- Withdrawal hanya diproses apabila seluruh validasi berhasil.
+
+### Priority
+
+High
