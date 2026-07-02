@@ -1071,3 +1071,194 @@ Estimasi ditampilkan pada halaman detail pesanan sehingga Buyer dapat mengetahui
 
 Medium
 
+---
+
+# Module: Payment
+
+## FR-090 — Membuat Transaksi Pembayaran
+
+### Deskripsi
+
+Sistem harus membuat transaksi pembayaran setelah Buyer berhasil melakukan checkout.
+
+### Acceptance Criteria
+
+- Checkout berhasil dilakukan.
+- Sistem menghasilkan transaksi baru.
+- Nomor transaksi bersifat unik.
+
+### Priority
+
+High
+
+---
+
+## FR-091 — Menampilkan Ringkasan Pembayaran
+
+### Deskripsi
+
+Sistem harus menampilkan ringkasan pembayaran sebelum Buyer melakukan pembayaran.
+
+Informasi yang ditampilkan meliputi:
+
+- Daftar Produk
+- Total Harga Produk
+- Biaya Layanan
+- Total Pembayaran
+- Metode Pembayaran
+
+### Acceptance Criteria
+
+- Informasi sesuai dengan isi keranjang.
+- Total pembayaran dihitung secara otomatis.
+
+### Priority
+
+High
+
+---
+
+## FR-092 — Pembayaran Menggunakan QRIS
+
+### Deskripsi
+
+Buyer dapat melakukan pembayaran menggunakan QRIS melalui Midtrans.
+
+### Acceptance Criteria
+
+- QRIS berhasil dibuat.
+- Buyer dapat melakukan pembayaran.
+- Status pembayaran diperbarui secara otomatis.
+
+### Priority
+
+High
+
+---
+
+## FR-093 — Pembayaran Langsung (Offline)
+
+### Deskripsi
+
+Buyer dapat memilih pembayaran langsung kepada Seller.
+
+### Acceptance Criteria
+
+- Sistem mencatat metode pembayaran Offline.
+- Seller mengetahui bahwa pembayaran dilakukan secara langsung.
+
+### Priority
+
+High
+
+---
+
+## FR-094 — Menerima Webhook Pembayaran
+
+### Deskripsi
+
+Backend harus menerima webhook dari Midtrans untuk memperbarui status pembayaran.
+
+### Acceptance Criteria
+
+- Signature webhook berhasil diverifikasi.
+- Status pembayaran diperbarui.
+- Status order ikut diperbarui.
+
+### Priority
+
+High
+
+---
+
+## FR-095 — Memperbarui Status Pembayaran
+
+### Deskripsi
+
+Sistem harus memperbarui status pembayaran berdasarkan hasil yang diterima dari Midtrans.
+
+Status pembayaran meliputi:
+
+- Pending
+- Paid
+- Failed
+- Expired
+- Cancelled
+
+### Acceptance Criteria
+
+- Status berubah sesuai webhook.
+- Riwayat status tersimpan.
+
+### Priority
+
+High
+
+---
+
+## FR-096 — Menangani Pembayaran Gagal
+
+### Deskripsi
+
+Sistem harus menangani transaksi yang gagal dibayar.
+
+### Acceptance Criteria
+
+- Status menjadi Failed.
+- Order tidak diproses.
+- Buyer dapat mencoba pembayaran kembali apabila masih diperbolehkan.
+
+### Priority
+
+High
+
+---
+
+## FR-097 — Menampilkan Riwayat Pembayaran
+
+### Deskripsi
+
+Buyer dapat melihat riwayat pembayaran dari seluruh transaksi.
+
+### Acceptance Criteria
+
+- Riwayat berhasil dimuat.
+- Informasi pembayaran lengkap ditampilkan.
+
+### Priority
+
+Medium
+
+---
+
+## FR-098 — Menghitung Biaya Layanan
+
+### Deskripsi
+
+Sistem harus menghitung biaya layanan sesuai aturan bisnis yang berlaku.
+
+### Acceptance Criteria
+
+- Biaya layanan dihitung otomatis.
+- Total pembayaran diperbarui.
+
+### Priority
+
+High
+
+---
+
+## FR-099 — Retry Pembayaran
+
+### Deskripsi
+
+Buyer dapat melakukan pembayaran ulang terhadap transaksi yang masih berstatus Pending atau Failed sesuai kebijakan sistem.
+
+### Acceptance Criteria
+
+- Retry hanya tersedia pada status yang valid.
+- Sistem membuat sesi pembayaran baru apabila diperlukan.
+
+### Priority
+
+Medium
