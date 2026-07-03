@@ -1970,3 +1970,258 @@ Sistem harus membedakan notifikasi yang telah dibaca dan belum dibaca.
 ### Priority
 
 Medium
+
+---
+
+# Module: Admin
+
+## FR-135 — Dashboard Admin
+
+### Deskripsi
+
+Sistem harus menyediakan dashboard utama bagi Administrator untuk memantau kondisi platform secara keseluruhan.
+
+Informasi yang ditampilkan meliputi:
+
+- Total Buyer
+- Total Seller
+- Total Order
+- Total Pendapatan Platform
+- Total Withdrawal
+- Seller Pending Verification
+- Statistik Penjualan
+
+### Acceptance Criteria
+
+- Dashboard berhasil dimuat.
+- Seluruh data ditampilkan sesuai kondisi terbaru.
+- Statistik diperbarui secara berkala.
+
+### Priority
+
+High
+
+---
+
+## FR-136 — Mengelola Akun Buyer
+
+### Deskripsi
+
+Administrator dapat melihat dan mengelola seluruh akun Buyer.
+
+### Acceptance Criteria
+
+- Daftar Buyer ditampilkan.
+- Admin dapat melihat detail akun.
+- Admin dapat menonaktifkan akun apabila diperlukan.
+
+### Priority
+
+Medium
+
+---
+
+## FR-137 — Mengelola Akun Seller
+
+### Deskripsi
+
+Administrator dapat melihat seluruh akun Seller.
+
+### Acceptance Criteria
+
+- Daftar Seller ditampilkan.
+- Informasi toko dapat dilihat.
+- Status Seller ditampilkan.
+
+### Priority
+
+High
+
+---
+
+## FR-138 — Verifikasi Seller
+
+### Deskripsi
+
+Administrator bertanggung jawab melakukan proses verifikasi Seller.
+
+Status verifikasi:
+
+- Pending
+- Approved
+- Rejected
+
+### Acceptance Criteria
+
+- Admin dapat melihat data Seller.
+- Admin dapat menyetujui atau menolak verifikasi.
+- Alasan penolakan dapat dicatat.
+
+### Priority
+
+High
+
+---
+
+## FR-139 — Mengelola Produk
+
+### Deskripsi
+
+Administrator dapat melihat seluruh produk yang terdaftar pada platform.
+
+### Acceptance Criteria
+
+- Daftar produk ditampilkan.
+- Detail produk dapat dilihat.
+- Produk dapat disembunyikan apabila melanggar aturan.
+
+### Priority
+
+Medium
+
+---
+
+## FR-140 — Monitoring Pesanan
+
+### Deskripsi
+
+Administrator dapat memantau seluruh transaksi yang terjadi pada platform.
+
+### Acceptance Criteria
+
+- Seluruh order dapat dilihat.
+- Detail order tersedia.
+- Status order ditampilkan.
+
+### Priority
+
+High
+
+---
+
+## FR-141 — Monitoring Pembayaran
+
+### Deskripsi
+
+Administrator dapat melihat seluruh transaksi pembayaran.
+
+### Acceptance Criteria
+
+- Riwayat pembayaran tersedia.
+- Status pembayaran ditampilkan.
+- Detail transaksi dapat dibuka.
+
+### Priority
+
+High
+
+---
+
+## FR-142 — Monitoring Withdrawal
+
+### Deskripsi
+
+Administrator dapat memantau seluruh proses withdrawal yang dilakukan Seller.
+
+### Acceptance Criteria
+
+- Daftar withdrawal ditampilkan.
+- Status withdrawal tersedia.
+- Detail withdrawal dapat dilihat.
+
+### Priority
+
+High
+
+---
+
+## FR-143 — Mengelola Kategori Produk
+
+### Deskripsi
+
+Administrator dapat mengelola kategori makanan pada platform.
+
+### Acceptance Criteria
+
+- Admin dapat menambah kategori.
+- Admin dapat mengubah kategori.
+- Admin dapat menghapus kategori.
+
+### Priority
+
+Medium
+
+---
+
+## FR-144 — Analytics Platform
+
+### Deskripsi
+
+Administrator dapat melihat statistik keseluruhan platform.
+
+Informasi meliputi:
+
+- Total Pendapatan
+- Jumlah Order
+- Seller Aktif
+- Buyer Aktif
+- Produk Terlaris
+- Grafik Penjualan
+
+### Acceptance Criteria
+
+- Statistik berhasil ditampilkan.
+- Data sesuai periode yang dipilih.
+
+### Priority
+
+Medium
+
+---
+
+## FR-145 — Konfigurasi Sistem
+
+### Deskripsi
+
+Administrator dapat mengubah konfigurasi umum sistem.
+
+Contoh:
+
+- Biaya layanan
+- Pengaturan AI
+- Pengaturan Payment Gateway
+- Pengaturan Withdrawal
+- Pengaturan Platform
+
+### Acceptance Criteria
+
+- Perubahan berhasil disimpan.
+- Perubahan diterapkan pada sistem.
+
+### Priority
+
+Medium
+
+---
+
+## FR-146 — Audit Log
+
+### Deskripsi
+
+Sistem harus mencatat aktivitas penting Administrator.
+
+Contoh aktivitas:
+
+- Login
+- Verifikasi Seller
+- Mengubah konfigurasi
+- Menghapus data
+
+### Acceptance Criteria
+
+- Seluruh aktivitas tercatat.
+- Riwayat tidak dapat diubah oleh Admin biasa.
+
+### Priority
+
+Medium
