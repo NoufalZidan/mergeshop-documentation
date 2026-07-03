@@ -20,19 +20,6 @@ Seluruh fitur utama sedang dirancang dan dikembangkan secara bertahap.
 
 ---
 
-## Peran Saya
-
-Pada proyek ini saya berperan sebagai developer yang berfokus pada aspek teknis, meliputi:
-
-- Frontend Development
-- Backend Development
-- Database Design
-- API Development
-- System Architecture
-- Design System
-
----
-
 ## Target Pengguna
 
 ### Pembeli
@@ -103,8 +90,7 @@ Bokul dipersonalisasi untuk masing-masing UMKM sehingga mampu membantu pelanggan
 
 ## Third Party Services
 
-- Midtrans (Payment Gateway)
-- Jack (Business Banking & Disbursement API)
+- Midtrans (Payment Gateway & Disbursement API)
 
 ---
 
