@@ -1813,3 +1813,90 @@ Apabila AI gagal memberikan respons, sistem harus menampilkan pesan kesalahan ya
 ### Priority
 
 Medium
+
+---
+
+# Module: Maps
+
+## FR-127 — Menampilkan Lokasi Seller
+
+### Deskripsi
+
+Sistem harus menampilkan lokasi Seller menggunakan Google Maps.
+
+### Acceptance Criteria
+
+- Lokasi berhasil ditampilkan.
+- Marker menunjukkan posisi toko.
+
+### Priority
+
+High
+
+---
+
+## FR-128 — Menampilkan Sebaran UMKM
+
+### Deskripsi
+
+Buyer dapat melihat persebaran seluruh UMKM makanan di Purwokerto melalui halaman Maps.
+
+### Acceptance Criteria
+
+- Semua toko yang aktif ditampilkan.
+- Marker sesuai lokasi toko.
+
+### Priority
+
+Medium
+
+---
+
+## FR-129 — Navigasi ke Toko
+
+### Deskripsi
+
+Buyer dapat membuka navigasi menuju lokasi Seller menggunakan Google Maps.
+
+### Acceptance Criteria
+
+- Tombol navigasi tersedia.
+- Google Maps terbuka dengan tujuan yang benar.
+
+### Priority
+
+High
+
+---
+
+## FR-130 — Menampilkan Toko Terdekat
+
+### Deskripsi
+
+Sistem harus menampilkan daftar toko yang berada di sekitar lokasi Buyer.
+
+### Acceptance Criteria
+
+- Lokasi Buyer berhasil diperoleh.
+- Daftar toko diurutkan berdasarkan jarak.
+
+### Priority
+
+Medium
+
+---
+
+## FR-131 — Pencarian Berdasarkan Radius (Future Development)
+
+### Deskripsi
+
+Buyer dapat mencari toko berdasarkan radius tertentu.
+
+### Acceptance Criteria
+
+- Buyer memilih radius pencarian.
+- Sistem menampilkan toko sesuai radius.
+
+### Priority
+
+Low
