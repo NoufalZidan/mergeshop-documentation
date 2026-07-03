@@ -19,6 +19,7 @@ Setiap requirement memiliki identitas unik agar mudah ditelusuri selama proses p
 10. Maps
 11. Notification
 12. Admin
+13. Common
 
 ---
 
@@ -2225,3 +2226,60 @@ Contoh aktivitas:
 ### Priority
 
 Medium
+
+---
+
+# Module: Common
+
+## FR-147 — Upload Gambar
+
+### Deskripsi
+
+Sistem harus mendukung proses upload gambar yang digunakan oleh berbagai modul.
+
+Digunakan untuk:
+
+- Foto Profil
+- Logo Toko
+- Banner
+- Foto Produk
+
+---
+
+## FR-148 — Pagination
+
+### Deskripsi
+
+Sistem harus mendukung pagination pada seluruh daftar data.
+
+---
+
+## FR-149 — Sorting
+
+### Deskripsi
+
+Sistem harus mendukung pengurutan data.
+
+---
+
+## FR-150 — Global Search
+
+### Deskripsi
+
+Sistem harus menyediakan mekanisme pencarian yang konsisten pada seluruh modul.
+
+---
+
+## FR-151 — Error Handling
+
+### Deskripsi
+
+Sistem harus menampilkan pesan kesalahan yang informatif tanpa membocorkan informasi sensitif.
+
+---
+
+## FR-152 — Activity Log
+
+### Deskripsi
+
+Sistem harus mencatat aktivitas penting pengguna untuk kebutuhan audit.
