@@ -1663,3 +1663,153 @@ Seluruh validasi dilakukan oleh Backend sebelum permintaan transfer dikirim ke p
 ### Priority
 
 High
+
+---
+
+# Module: AI Assistant
+
+## FR-120 — AI Assistant Minjan
+
+### Deskripsi
+
+Sistem harus menyediakan AI Assistant bernama **Minjan** pada halaman utama Buyer.
+
+Minjan berfungsi sebagai asisten virtual yang membantu Buyer menemukan makanan, memberikan rekomendasi, serta menjawab pertanyaan umum mengenai MergeShop.
+
+### Acceptance Criteria
+
+- Buyer dapat membuka halaman percakapan dengan Minjan.
+- Buyer dapat mengirim pesan.
+- AI memberikan respons yang relevan.
+- Riwayat percakapan tersimpan selama sesi berlangsung.
+
+### Priority
+
+High
+
+---
+
+## FR-121 — Rekomendasi Makanan
+
+### Deskripsi
+
+Minjan harus mampu memberikan rekomendasi makanan berdasarkan pertanyaan yang diberikan oleh Buyer.
+
+Contoh:
+
+- Rekomendasi makanan pedas
+- Makanan murah
+- Minuman segar
+- Cemilan
+- Makanan untuk sarapan
+
+### Acceptance Criteria
+
+- AI memberikan rekomendasi sesuai konteks pertanyaan.
+- Rekomendasi berasal dari produk yang tersedia pada MergeShop.
+
+### Priority
+
+High
+
+---
+
+## FR-122 — Menjawab Pertanyaan Umum
+
+### Deskripsi
+
+Minjan harus mampu menjawab pertanyaan umum mengenai platform MergeShop.
+
+Contoh:
+
+- Cara membeli makanan
+- Cara menjadi Seller
+- Metode pembayaran
+- Cara menggunakan aplikasi
+
+### Acceptance Criteria
+
+- AI memberikan jawaban yang relevan.
+- Jawaban sesuai dengan informasi terbaru pada sistem.
+
+### Priority
+
+Medium
+
+---
+
+## FR-123 — AI Assistant Bokul
+
+### Deskripsi
+
+Setiap Seller memiliki AI Assistant bernama **Bokul** yang tersedia pada halaman toko.
+
+Bokul berfungsi untuk membantu Buyer memperoleh informasi mengenai toko dan produk milik Seller.
+
+### Acceptance Criteria
+
+- Bokul tersedia pada halaman toko.
+- Buyer dapat mengirim pertanyaan.
+- AI memberikan jawaban sesuai informasi toko.
+
+### Priority
+
+High
+
+---
+
+## FR-124 — Konfigurasi AI Bokul
+
+### Deskripsi
+
+Seller dapat melakukan konfigurasi AI Bokul melalui dashboard Seller.
+
+Konfigurasi meliputi:
+
+- Informasi toko
+- FAQ
+- Prompt AI
+- Personality AI
+
+### Acceptance Criteria
+
+- Seller dapat memperbarui konfigurasi.
+- Perubahan digunakan pada percakapan berikutnya.
+
+### Priority
+
+Medium
+
+---
+
+## FR-125 — Riwayat Percakapan AI
+
+### Deskripsi
+
+Sistem dapat menyimpan riwayat percakapan AI selama sesi penggunaan.
+
+### Acceptance Criteria
+
+- Riwayat percakapan berhasil ditampilkan.
+- Percakapan dapat dilanjutkan selama sesi masih aktif.
+
+### Priority
+
+Low
+
+---
+
+## FR-126 — Penanganan Kegagalan AI
+
+### Deskripsi
+
+Apabila AI gagal memberikan respons, sistem harus menampilkan pesan kesalahan yang informatif kepada pengguna.
+
+### Acceptance Criteria
+
+- Sistem tidak mengalami crash.
+- Pengguna menerima informasi bahwa layanan AI sedang tidak tersedia.
+
+### Priority
+
+Medium
