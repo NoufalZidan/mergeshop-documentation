@@ -19,30 +19,6 @@ State machine digunakan untuk memastikan setiap perubahan status pada sistem men
 - Completed
 - Cancelled
 
-Pending Payment
-        │
-        ├───────────── Payment Failed ─────────────┐
-        │                                          │
-        ▼                                          ▼
-Paid                                      Cancelled
-        │
-        ▼
-Waiting Seller Confirmation
-        │
-        ├──────── Seller Cancel ───────────────┐
-        │                                      │
-        ▼                                      ▼
-Processing                              Cancelled
-   │
-   ├──────────────┐
-   ▼              ▼
-Ready for     Out for
-Pickup        Delivery
-   │              │
-   └───────┬──────┘
-           ▼
-Completed
-
 | Current State               | Action           | Next State                  |
 | --------------------------- | ---------------- | --------------------------- |
 | Pending Payment             | Payment Success  | Paid                        |
@@ -54,3 +30,76 @@ Completed
 | Processing                  | Delivery         | Out for Delivery            |
 | Ready for Pickup            | Buyer Pickup     | Completed                   |
 | Out for Delivery            | Delivered        | Completed                   |
+
+---
+
+# Payment State Machine
+
+## States
+
+- Pending
+- Paid
+- Failed
+- Expired
+- Cancelled
+
+| Current | Event   | Next      |
+| ------- | ------- | --------- |
+| Pending | Success | Paid      |
+| Pending | Failed  | Failed    |
+| Pending | Expired | Expired   |
+| Pending | Cancel  | Cancelled |
+
+---
+
+# Seller Verification
+
+## States
+
+- Pending
+- Approved
+- Rejected
+
+| Current  | Action       | Next     |
+| -------- | ------------ | -------- |
+| Pending  | Approve      | Approved |
+| Pending  | Reject       | Rejected |
+| Rejected | Submit Again | Pending  |
+
+---
+
+# Withdrawal State Machine
+
+## States
+
+- Processing
+- Completed
+- Failed
+
+| Current    | Event   | Next      |
+| ---------- | ------- | --------- |
+| Processing | Success | Completed |
+| Processing | Failed  | Failed    |
+
+---
+
+# Product Availability
+
+## States
+
+| Current  | Action | Next     |
+| -------- | ------ | -------- |
+| Tersedia | Toggle | Habis    |
+| Habis    | Toggle | Tersedia |
+
+---
+
+# Notification State Machine
+
+## States
+
+| Current | Action            | Next |
+| ------- | ----------------- | ---- |
+| Unread  | Open Notification | Read |
+
+---
