@@ -43,8 +43,7 @@ Mengelola keseluruhan operasional platform, data pengguna, transaksi, dan aktivi
 - Dashboard Penjual
 - Dashboard Admin
 - Wallet & Seller Withdrawal
-- Integrasi Midtrans Payment Gateway
-- Integrasi Jack Disbursement API
+- Integrasi Midtrans Payment Gateway & Disbursement API
 - Geolocation & Maps
 - Manajemen Produk
 - Manajemen Pesanan
