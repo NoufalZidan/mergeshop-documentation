@@ -1900,3 +1900,73 @@ Buyer dapat mencari toko berdasarkan radius tertentu.
 ### Priority
 
 Low
+
+---
+
+# Module: Notification
+
+## FR-132 — Notifikasi Buyer
+
+### Deskripsi
+
+Buyer menerima notifikasi terkait aktivitas transaksi.
+
+Jenis notifikasi:
+
+- Pembayaran berhasil
+- Pesanan diproses
+- Pesanan siap diambil
+- Pesanan sedang diantar
+- Pesanan selesai
+- Pesanan dibatalkan
+
+### Acceptance Criteria
+
+- Notifikasi berhasil ditampilkan.
+- Riwayat notifikasi tersedia.
+
+### Priority
+
+High
+
+---
+
+## FR-133 — Notifikasi Seller
+
+### Deskripsi
+
+Seller menerima notifikasi terkait aktivitas toko.
+
+Jenis notifikasi:
+
+- Pesanan baru
+- Withdrawal berhasil
+- Withdrawal gagal
+- Verifikasi akun
+- Pembatalan pesanan
+
+### Acceptance Criteria
+
+- Notifikasi muncul secara otomatis.
+- Riwayat notifikasi dapat dilihat.
+
+### Priority
+
+High
+
+---
+
+## FR-134 — Status Notifikasi
+
+### Deskripsi
+
+Sistem harus membedakan notifikasi yang telah dibaca dan belum dibaca.
+
+### Acceptance Criteria
+
+- Status Read dan Unread tersedia.
+- Pengguna dapat menandai notifikasi sebagai telah dibaca.
+
+### Priority
+
+Medium
